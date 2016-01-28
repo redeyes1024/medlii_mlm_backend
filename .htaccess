@@ -1,0 +1,6 @@
+#php_value upload_max_filesize = 10M
+IndexIgnore *
+RewriteEngine on
+RewriteRule (.*)\.asmx /ws/index.php?class=$1 [QSA]
+#RewriteRule (.*)\.asmx^localpath(.*)
+#RewriteRule (.*)\.asmx %{QUERY_STRING}/ws/index.php?class=$1 [QSA]
